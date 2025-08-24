@@ -11,7 +11,7 @@ class Kirin < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/thetnaingtn/kirin/releases/download/v0.1.0/kirin_Darwin_x86_64.tar.gz"
-      sha256 "8967dd01adedd872ee1a62f7b52510e36e54c673122aa1a2fae9a7c602673dd2"
+      sha256 "a00f68cabc8e4007400fe8d495265a8f7e73f9b3b89281b0b889ab8580400186"
 
       def install
         bin.install "kirin"
@@ -19,7 +19,7 @@ class Kirin < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/thetnaingtn/kirin/releases/download/v0.1.0/kirin_Darwin_arm64.tar.gz"
-      sha256 "f2d25f29abba838ce1c0cb671c1e2b16ee16af1cd96c7a1733e04a2572e70340"
+      sha256 "8c3b2c463df0490381ee0e1bb995d25441b9ba4da23b047e4ec867115e9f027e"
 
       def install
         bin.install "kirin"
@@ -30,14 +30,14 @@ class Kirin < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/thetnaingtn/kirin/releases/download/v0.1.0/kirin_Linux_x86_64.tar.gz"
-      sha256 "84c5c3890b373985f2cac524335fe4280e9bb70eea39cd3bed3dbb3eb19e3de1"
+      sha256 "d5935c5456c378be71b494d529313bbb82f733c8c97f400c476e1c50f926fe49"
       def install
         bin.install "kirin"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/thetnaingtn/kirin/releases/download/v0.1.0/kirin_Linux_arm64.tar.gz"
-      sha256 "b5803da450d7bdd28895da78916058b96fde575d59ebc7c6f231246da0bc8acb"
+      sha256 "9a7055c33275e1f2604bd6b780bdddf2360cf1d3b8ff536314c87eb39392f5c5"
       def install
         bin.install "kirin"
       end
