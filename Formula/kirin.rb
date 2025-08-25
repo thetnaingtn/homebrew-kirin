@@ -5,21 +5,21 @@
 class Kirin < Formula
   desc ""
   homepage ""
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thetnaingtn/kirin/releases/download/v0.1.0/kirin_Darwin_x86_64.tar.gz"
-      sha256 "a00f68cabc8e4007400fe8d495265a8f7e73f9b3b89281b0b889ab8580400186"
+      url "https://github.com/thetnaingtn/kirin/releases/download/v0.1.1/kirin_Darwin_x86_64.tar.gz"
+      sha256 "3cd2dc5deb1bda1d020fcef925eccd860dabfb49715ebb88dbc79010cbd40021"
 
       def install
         bin.install "kirin"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thetnaingtn/kirin/releases/download/v0.1.0/kirin_Darwin_arm64.tar.gz"
-      sha256 "8c3b2c463df0490381ee0e1bb995d25441b9ba4da23b047e4ec867115e9f027e"
+      url "https://github.com/thetnaingtn/kirin/releases/download/v0.1.1/kirin_Darwin_arm64.tar.gz"
+      sha256 "18df0ccdb3be3771eb75f91df27d2fe0cf1e0aa1534bdcbfe521cb945af352ec"
 
       def install
         bin.install "kirin"
@@ -29,15 +29,15 @@ class Kirin < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/thetnaingtn/kirin/releases/download/v0.1.0/kirin_Linux_x86_64.tar.gz"
-      sha256 "d5935c5456c378be71b494d529313bbb82f733c8c97f400c476e1c50f926fe49"
+      url "https://github.com/thetnaingtn/kirin/releases/download/v0.1.1/kirin_Linux_x86_64.tar.gz"
+      sha256 "b610dd926b91bdff73575d0e1cda39f3f125e216bb71d9c6d9d75e782fbd60ef"
       def install
         bin.install "kirin"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/thetnaingtn/kirin/releases/download/v0.1.0/kirin_Linux_arm64.tar.gz"
-      sha256 "9a7055c33275e1f2604bd6b780bdddf2360cf1d3b8ff536314c87eb39392f5c5"
+      url "https://github.com/thetnaingtn/kirin/releases/download/v0.1.1/kirin_Linux_arm64.tar.gz"
+      sha256 "74ac332eccee53026d1eba56b0e78b17def91897d5997921b6e307893e55e3f2"
       def install
         bin.install "kirin"
       end
